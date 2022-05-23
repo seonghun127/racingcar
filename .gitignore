@@ -12,7 +12,8 @@
 *.iws
 *.iml
 *.ipr
-out/
+# comment below folder beacuse of using package named 'out'
+#out/
 
 /build
 
