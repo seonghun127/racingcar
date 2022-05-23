@@ -7,8 +7,7 @@ import racingcar.domain.RacingCar
 
 class CreateRacingCarService(
     private val createRacingCarPort: CreateRacingCarPort
-) : CreateRacingCarUseCase, CreateMultiRacingCarUseCase
-{
+) : CreateRacingCarUseCase, CreateMultiRacingCarUseCase {
 
     override fun create(name: String) {
         createRacingCarPort.create(RacingCar(name))

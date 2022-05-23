@@ -1,4 +1,4 @@
-package config.racingCar
+package config.racingcar
 
 import racingcar.adaptor.`in`.console.RacingCarController
 import racingcar.adaptor.`in`.console.view.ConsoleInput

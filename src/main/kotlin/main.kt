@@ -1,4 +1,4 @@
-import config.racingCar.DependencyConfig
+import config.racingcar.DependencyConfig
 
 fun main() {
     val dependencyConfig = DependencyConfig()
