@@ -5,7 +5,7 @@ import racingcar.domain.RacingCar
 
 class RacingCarLoadAdaptor(
     private val racingCarRepository: RacingCarRepository
-) : LoadAllRacingCarPort{
+) : LoadAllRacingCarPort {
 
     override fun loadAll(): List<RacingCar> {
         return racingCarRepository.loadAll()
