@@ -2,11 +2,13 @@ package config.racingcar
 
 import racingcar.adaptor.`in`.console.CreateRacingCarController
 import racingcar.adaptor.`in`.console.RaceController
+import racingcar.adaptor.`in`.console.WinnerRacingCarController
 import racingcar.adaptor.out.RacingCarLoadAdaptor
 import racingcar.adaptor.out.RacingCarPersistenceAdaptor
 import racingcar.adaptor.out.RacingCarRepository
 import racingcar.application.CreateRacingCarService
 import racingcar.application.MoveRacingCarService
+import racingcar.application.WinnerRacingCarService
 
 object DependencyConfig {
 
@@ -26,5 +28,12 @@ object DependencyConfig {
         val moveRacingCarService = MoveRacingCarService(racingCarLoadAdaptor, racingCarPersistenceAdaptor)
 
         return RaceController(moveRacingCarService)
+    }
+
+    fun configureWinnerRacingCarController(): WinnerRacingCarController {
+        val racingCarLoadAdaptor = RacingCarLoadAdaptor(RacingCarRepository)
+        val winnerRacingCarService = WinnerRacingCarService(racingCarLoadAdaptor)
+
+        return WinnerRacingCarController(winnerRacingCarService)
     }
 }

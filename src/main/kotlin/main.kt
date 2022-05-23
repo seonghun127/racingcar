@@ -6,4 +6,7 @@ fun main() {
 
     val raceController = DependencyConfig.configureRaceController()
     raceController.race()
+
+    val winnerRacingCarController = DependencyConfig.configureWinnerRacingCarController()
+    winnerRacingCarController.getWinners()
 }
