@@ -1,8 +1,9 @@
 import config.racingcar.DependencyConfig
 
 fun main() {
-    val dependencyConfig = DependencyConfig()
-    val racingController = dependencyConfig.configureRacingController()
-
+    val racingController = DependencyConfig.configureCreateRacingCarController()
     racingController.createMultiRacingCar()
+
+    val raceController = DependencyConfig.configureRaceController()
+    raceController.race()
 }
