@@ -1,20 +1,9 @@
 spring:
   datasource:
-    type: com.zaxxer.hikari.HikariDataSource
-    driverClassName: org.mariadb.jdbc.Driver
-    jdbcUrl: jdbc:mysql://localhost:3306/benefit?characterEncoding=UTF-8&serverTimezone=UTC
-    username: root
-    password: root
-    auto-commit: false
-    connectionTimeout: 3000
-    idleTimeout: 30000
-    maxLifeTime: 50000
-    poolName: demo
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:testdb;MODE=MYSQL
+    username: sa
   jpa:
-    hibernate:
-      naming:
-        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl
-        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL57Dialect

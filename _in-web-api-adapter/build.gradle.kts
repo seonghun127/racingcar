@@ -9,6 +9,6 @@ repositories {
 }
 
 dependencies {
-    implementation(project(":_application-core"))
-    api("org.springframework.boot:spring-boot-starter-web")
+    api(project(":_application-core"))
+    implementation("org.springframework.boot:spring-boot-starter-web")
 }

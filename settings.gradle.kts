@@ -8,4 +8,5 @@ include(
     "_out-persistence-adapter",
     "_out-in-memory-adapter",
     "_configuration-console",
+    "_configuration-web",
 )

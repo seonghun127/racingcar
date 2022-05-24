@@ -12,5 +12,5 @@ dependencies {
     implementation(project(":_application-core"))
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("org.mariadb.jdbc:mariadb-java-client")
-    testImplementation("com.h2database:h2:2.1.212")
+    runtimeOnly("com.h2database:h2:2.1.212")
 }
