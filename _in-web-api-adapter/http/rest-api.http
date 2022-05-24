@@ -1,0 +1,26 @@
+POST http://localhost:8080/v1/racing-cars/multi
+Content-Type: application/json
+
+{
+  "names": [
+    "test",
+    "test2",
+    "test3",
+    "test4"
+  ]
+}
+
+###
+
+PATCH http://localhost:8080/v1/racing-car/race
+Content-Type: application/json
+
+{
+  "round": 100
+}
+
+###
+
+GET http://localhost:8080/v1/racing-car/winner
+
+###
