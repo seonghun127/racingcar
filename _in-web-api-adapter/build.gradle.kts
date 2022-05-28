@@ -15,11 +15,6 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
 }
 
-tasks.named<Jar>("jar") {
-    enabled = true
-}
-
 tasks.named<BootJar>("bootJar") {
     enabled = false
 }
-

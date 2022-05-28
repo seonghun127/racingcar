@@ -1,3 +1,5 @@
+import org.springframework.boot.gradle.tasks.bundling.BootJar
+
 plugins {
     kotlin("jvm")
     id("org.springframework.boot") version "2.6.7"
@@ -13,4 +15,8 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("org.mariadb.jdbc:mariadb-java-client")
     runtimeOnly("com.h2database:h2:2.1.212")
+}
+
+tasks.named<BootJar>("bootJar") {
+    enabled = false
 }
