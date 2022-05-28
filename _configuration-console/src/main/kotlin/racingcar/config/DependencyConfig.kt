@@ -2,7 +2,6 @@ package racingcar.config
 
 import racingcar.adapter.out.RacingCarInMemoryAdapter
 import racingcar.adapter.out.RacingCarLoadAdapter
-import racingcar.adapter.out.RacingCarRepository
 import racingcar.adaptor.`in`.CreateRacingCarController
 import racingcar.adaptor.`in`.RaceController
 import racingcar.adaptor.`in`.WinnerRacingCarController
